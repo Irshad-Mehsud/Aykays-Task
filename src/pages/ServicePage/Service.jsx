@@ -5,7 +5,7 @@ import Card from '../../components/Card';
 import CardContext from '../../components/context/CardContext';
 const Service = () => {
     const [CardData, setCardData] = React.useState([
-    { heading: "🔥 Seamless Connections", text: "Stay in touch with friends, family, and like-minded people with just a tap." },
+    { heading: "🔥Seamless Connections", text: "Stay in touch with friends, family, and like-minded people with just a tap." },
     { heading: "📸 Share Your Story", text: "Upload photos, videos, and updates to let the world know what’s happening in your life." },
     { heading: "💬 Real-Time Chat", text: "Whether it's a DM or a group conversation, connect instantly with smooth, lightning-fast messaging." },
     { heading: "🔒 Privacy First", text: "Your data, your control. We prioritize your privacy with world-class security." },

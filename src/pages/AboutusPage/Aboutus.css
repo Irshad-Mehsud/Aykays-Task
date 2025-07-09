@@ -1,99 +1,101 @@
-.Aboutus-right-content{
-position: relative;
-width: 100%;
-height: 100px;
-top: 0;
+.Aboutus-right-content {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  top: 0;
 }
 
-.Aboutus-right-content h1{
-font-family: "ITC Avant Garde Gothic Std",sans-serif;
-font-weight: 600;
-font-style: Demi;
-font-size: 40px;
-/* leading-trim: NONE; */
-line-height: 50px;
-letter-spacing: -5%;
-color: #FAFAFA;
-top: 0;
+.Aboutus-right-content h1 {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 600;
+  font-style: normal; /* "Demi" is not valid for font-style */
+  font-size: clamp(28px, 5vw, 40px); /* responsive font size */
+  line-height: 1.2;
+  letter-spacing: -0.5px; /* percentage is not valid */
+  top: 0;
+  text-align: center;
 }
 
-
-
-
-
-
-
-.card-text p{
-    text-align: center;
+.about-card-text p {
+  text-align: center;
 }
-.All-Cards {
+
+.All-About-Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  gap: 15px;
+  padding: 10px;
+}
+
+.About-Card  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 260px;
+  height: auto;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 5px 5px 10px 0px #0000001a;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .About-Card,.working-Cards {
+    width: 45%;
+  }
+}
+
+@media (max-width: 860px) {
+  .service {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    /* padding: 10px; */
-    /* margin-top: 20px; */
-}
-.Card{
-    display: flex;
-    flex-direction: column; 
-    /* align-items: center; */
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    background: #F2F2F2;
-    gap: 0;
-    border-radius: 10px;
-    /* margin: 20px; */
-    padding: 10px;
-   box-shadow: -3px -3px 10px 0px #FFFFFF;
-   box-shadow: 5px 5px 10px 0px #0000001A;
-
-}
-
- @media screen and (max-width: 860px){
-    .service{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .Card{
+  }
+  .Aboutus-right {
     width: 100%;
     height: auto;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: -3px -3px 10px 0px #FFFFFF;
-   box-shadow: 5px 5px 10px 0px #0000001A;
+  }
+  .About-Card,.working-Cards {
+    width: 90%;
+  }
 }
-    .All-Cards{
-        margin-top: 190px;
-    }
-} 
 
-@media screen and (max-width: 768px) {
-.All-Cards{
+@media (max-width: 768px) {
+  .All-Cards {
     margin-top: 120px;
-}
-.Card{
-    width: 100%;
-    height: auto;
-    margin: 10px;
+  }
+  .All-About-Cards {
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
+  }
 }
 
-@media (max-width: 410px) and (max-width: 650px) {
-  .Card {
+@media (max-width: 650px) {
+  .All-About-Cards {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .About-Card,.working-Cards {
     width: 100%;
     margin: 10px 5px;
-    padding: 10px;
-    box-shadow: -3px -3px 10px 0px #FFFFFF;
-   box-shadow: 5px 5px 10px 0px #0000001A;
+    padding: 12px;
   }
-  .All-Cards{
-    margin-top: 190px;
+  .All-About-Cards {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .All-About-Cards {
+    margin-top: 80px;
   }
 }

@@ -1,0 +1,199 @@
+/* ---------- Base Styles ---------- */
+.reason-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #ff4f4f;
+  color: white;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  gap: 30px;
+  margin:20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.reason-content {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.reason-content h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.reason-content p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.reason-description {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* width: 900px; */
+}
+
+.donate-button {
+  padding: 12px 25px;
+  background-color: white;
+  color: #ff4f4f;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.phone1{
+    /* margin-top: 110px; */
+      /* margin-left:250px; */
+      height: 200px !important;
+      /* margin-right: 20px; */
+      margin-top: 175px;
+}
+
+.donate-button:hover {
+  background-color: #ffeaea;
+}
+
+.phone-preview {
+  display: flex;
+  justify-content:space-around;
+  /* align-items: flex-end; */
+
+  /* flex-wrap: wrap; */
+  flex: 1;
+  padding: 20px;
+  align-self: flex-end;
+}
+
+.phone {
+    margin-bottom: -98px;
+  width: 250px;
+  max-width: 90vw;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Large Tablets (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .reason-section {
+    padding: 40px 30px;
+  }
+
+  .reason-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .reason-content p {
+    font-size: 1rem;
+  }
+
+  .reason-description {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .phone-preview {
+    justify-content: center;
+  }
+
+}
+@media (max-width: 885px) {
+.phone-preview {
+    justify-content: space-around;
+  }
+}
+/* ---------- Medium Tablets / Landscape Phones (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .reason-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .reason-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .reason-description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-preview {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+     align-self: center;
+  }
+
+  .phone {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  .phone1{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* ---------- Mobile Phones (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .reason-section {
+    padding: 30px 15px;
+  }
+
+  .reason-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .reason-content p {
+    font-size: 0.95rem;
+  }
+
+  .donate-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .reason-description {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-preview {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .phone {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

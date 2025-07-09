@@ -1,0 +1,88 @@
+.footer {
+  background-color: #ff4f4f;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin: 0 25px;
+  height: 208px;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  /* flex-wrap: wrap; allows content to wrap on small screens */
+}
+
+.footer-heading {
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-image {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+/* -------- Responsive Adjustments -------- */
+
+/* Tablets and below (≤ 768px) */
+@media (max-width: 768px) {
+  .footer {
+    /* padding: 40px 15px; */
+    height: 329px; /* allow height to grow */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-image {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 720px){
+.footer {
+    /* padding: 40px 15px; */
+    height: 270px;; /* allow height to grow */
+  }
+}
+/* Mobile Phones (≤ 480px) */
+@media (min-width: 480px) {
+  .footer-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-image {
+    width: 100%;
+    max-width: 250px;
+    /* bottom: 1000px; */
+  }
+
+  /* .footer {
+    margin: 0 15px;
+    padding: 30px 10px;
+  } */
+   @media (max-width: 368px){
+     .footer {
+    /* padding: 40px 15px; */
+    height:300px;; /* allow height to grow */
+     }
+   }
+     @media (max-width: 320px){
+ .footer {
+    /* padding: 40px 15px; */
+    height:290px;; /* allow height to grow */
+     }
+     }
+}

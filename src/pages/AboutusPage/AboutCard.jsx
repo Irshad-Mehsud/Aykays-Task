@@ -7,11 +7,11 @@ const AboutCard = () => {
   return (
      <>
       {AboutCardData && AboutCardData.map((card, index) => (
-        <div key={index} className='Card'>
+        <div key={index} className='About-Card'>
           <div className='flex items-center justify-center'>
-            <h5 className='card-heading'>{card.heading}</h5>
+            <h5 className='About-card-heading'>{card.heading}</h5>
           </div>
-          <div className='card-text flex items-center justify-center'>
+          <div className='about-card-text flex items-center justify-center'>
             <p>{card.text}</p>
           </div>
         </div>
