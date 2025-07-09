@@ -1,9 +1,9 @@
 import React from 'react';
 import './Aboutus.css';
 import AboutusImg from '../../assets/aboutusimg.png';
-import AboutCardContext from '../../components/context/AboutCardContext'; // Import the context if needed
+import AboutCardContext from '../../components/context/AboutCardContext'; 
 import AboutCard from './AboutCard';
-import { useState } from 'react'; // Import useState from React
+import { useState } from 'react'; 
 
 const Aboutus = () => {
 

@@ -8,10 +8,10 @@
 .Aboutus-right-content h1 {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
   font-weight: 600;
-  font-style: normal; /* "Demi" is not valid for font-style */
-  font-size: clamp(28px, 5vw, 40px); /* responsive font size */
+  font-style: normal; 
+  font-size: clamp(28px, 5vw, 40px); 
   line-height: 1.2;
-  letter-spacing: -0.5px; /* percentage is not valid */
+  letter-spacing: -0.5px;
   top: 0;
   text-align: center;
 }

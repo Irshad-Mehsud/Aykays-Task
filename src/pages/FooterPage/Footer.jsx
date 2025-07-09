@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import footerImage from "../../assets/Body.png"; // adjust the path based on your project structure
+import footerImage from "../../assets/Body.png"; 
 
 const Footer = () => {
   return (

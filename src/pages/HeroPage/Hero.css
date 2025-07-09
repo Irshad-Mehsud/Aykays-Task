@@ -12,11 +12,11 @@
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
   /* font-weight: 600; */
   margin-top: 20px;
-  font-style: normal; /* 'Demi' is not valid in CSS */
+  font-style: normal;
   font-size: 23px;
-  /* leading-trim: NONE; */ /* Not supported */
+  /* leading-trim: NONE; */ 
   line-height: 36px;
-  letter-spacing: 0px; /* Changed from invalid 0% */
+  letter-spacing: 0px; 
   color: #FAFAFA;
 }
 

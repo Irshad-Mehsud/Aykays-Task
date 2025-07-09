@@ -23,7 +23,7 @@
   background: #F2F2F2;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* deeper shadow */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
   text-align: left;
   transition: transform 0.3s ease;
 }

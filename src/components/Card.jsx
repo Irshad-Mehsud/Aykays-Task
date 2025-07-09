@@ -3,7 +3,7 @@ import '../pages/ServicePage/Service.css';
 import CardContext from './context/CardContext';
 
 const Card = () => {
-  const { CardData } = useContext(CardContext); // Get array from context
+  const { CardData } = useContext(CardContext); 
 
   return (
     <>

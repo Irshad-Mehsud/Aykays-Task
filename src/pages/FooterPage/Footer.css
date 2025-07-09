@@ -2,7 +2,7 @@
   background-color: #ff4f4f;
   color: white;
   text-align: center;
-  padding: 10px 20px 0; /* Top padding only, no bottom */
+  padding: 10px 20px 0;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   margin: 0 40px;
@@ -30,7 +30,7 @@
   max-width: 100%;
   height: auto;
   margin-top: 8px;
-  margin-bottom: 0; /* No extra spacing below image */
+  margin-bottom: 0; 
   display: block;
 }
 
